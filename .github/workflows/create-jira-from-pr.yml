@@ -13,7 +13,7 @@ permissions:
 jobs:
   call-create-jira:
     if: github.event.label.name == 'create-jira'
-    uses: YOUR_ORG_NAME/.github/.github/workflows/create-jira-from-pr.yml@main
+    uses: Personal-Testing-Organization/.github/.github/workflows/create-jira-from-pr.yml@main
     with:
       pr_title: ${{ github.event.pull_request.title }}
       pr_url: ${{ github.event.pull_request.html_url }}
